@@ -1,0 +1,329 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffffff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000; /* Ensuring nav is in front */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  padding: 8px 12px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: auto;
+}
+
+header {
+    text-align: center;
+    padding: 20px 20px;
+    background-color: white;
+}
+
+header h1 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+header p {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  animation: slide 12s infinite;
+}
+
+.slide {
+  width: 80%;
+  height: 80%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  33.33% { transform: translateX(0%); }
+  66.66% { transform: translateX(-100%); }
+  100% { transform: translateX(-200%); }
+}
+
+/* Contact section styles */
+#contact {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.profile-icon img {
+  width: auto; /* Adjust width as necessary */
+  height: 80px; /* Adjust height as necessary */
+  border-radius: 50%; /* Makes the image circular */
+  margin-right: 80px; /* Space between image and text */
+}
+
+.profile-info h4 {
+  margin: 4px;
+  font-size: 20px; /* Adjust font size as necessary */
+  font-weight: bold;
+}
+
+.profile-info p {
+  margin: 4px;
+  font-size: 16px; /* Adjust font size as necessary */
+  color: #6c757d; /* Light gray color */
+}
+
+.info-list {
+  margin-top: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.info-number {
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.info-item p {
+  margin: 0;
+  color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Packages section styles */
+#packages {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+#packages h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.packages-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.package {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  width: calc(33% - 40px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.package img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.package h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  color: #007BFF;
+}
+
+.package p {
+  color: #777;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Call to Action section styles */
+#call-to-action {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+#call-to-action button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#call-to-action button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Adding blur effect */
+    z-index: 999; /* Ensure dropdown is in front */
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .hamburger {
+      display: block;
+  }
+
+    .banner {
+      height: 60vh; /* Adjust height for smaller screens */
+  }
+
+  .slide img {
+      object-fit: contain; /* Adjust image fit for smaller screens */
+  }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .package {
+      width: calc(50% - 40px);
+  }
+
+}
+@media (max-width: 480px) {
+  .banner {
+      height: 50vh; /* Further adjust height for very small screens */
+  }
+  .package {
+    width: calc(100% - 40px);
+  }
+}

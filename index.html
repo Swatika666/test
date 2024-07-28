@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IX Comp</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo-container">
+        <a href="https://porto.aryok.me"><img src="assets/IX.png" class="logo" alt="Logo"></a>
+            
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#packages">Our Package</a></li>
+            <li><a href="#contact">Call Us</a></li>
+        </ul>
+        <div class="hamburger">
+            <img src="assets/menu.jpg" class="hamburger-icon" alt="Menu">
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <header id="home">
+        <h1>Bakulan Komputer dan Laptop</h1>
+        <p>Bahagiamu Bahagiaku</p>
+        <div class="banner">
+            <div class="slides">
+                <div class="slide"><img src="assets/1.jpg" alt="Slide 1"></div>
+                <div class="slide"><img src="assets/2.jpg" alt="Slide 2"></div>
+                <div class="slide"><img src="assets/3.jpg" alt="Slide 3"></div>
+                <div class="slide"><img src="assets/1.jpg" alt="Slide 1"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Contact Section -->
+    <section id="contact">
+        <div class="contact-content">
+            <div>
+                <img src="assets/IX.png" class="logo-contact" width="auto" height="400px">
+                <blockquote>"Inspiring Innovation • Persistent Perfection"</blockquote>
+                <div class="profile-card">
+                  <div class="profile-icon">
+                      <img src="https://telegra.ph/file/a801076d0c4f0f7e1b93e.jpg" alt="Profile Icon">
+                  </div>
+                  <div class="profile-info">
+                      <h4>Aryaeka.r.p</h4>
+                      <p>Pelajar</p>
+                  </div>
+              </div>
+                
+            <h2>Beli dan dapatkan benefitnya</h2>
+            <div class="info-list">
+                <div class="info-item">
+                    <div class="info-number">1</div>
+                    <p>Murah meriah</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-number">2</div>
+                    <p>Banyak diskonnya</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-number">3</div>
+                    <p>Dijamin orinisil</p>
+                </div> 
+            </div>
+            </div>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+                <form id="contact-form" onsubmit="return validateForm()">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="First and last name" required>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    <label for="destination">Apa Yang Kamu Mau?</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">Select option</option>
+                        <option value="destination1">Komputer</option>
+                        <option value="destination2">Laptop</option>
+                        <option value="destination3">SmartPhone</option>
+                    </select>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Package Section -->
+    <section id="packages">
+        <h2>Our Package</h2>
+        <div class="packages-container">
+            <div class="package" id="kom1">
+                <img src="assets/k1.jpeg" alt="kom1">
+                <h3>PC Gaming</h3>
+                <p>Mahal</p>
+            </div>
+            <div class="package" id="kom2">
+                <img src="assets/k2.jpg" alt="kom2">
+                <h3>PC Gaming</h3>
+                <p>Mahal</p>
+            </div>
+            <div class="package" id="lap1">
+                <img src="assets/k3.jpg" alt="lap1">
+                <h3>Laptop Gaming</h3>
+                <p>Mahal</p>
+            </div>
+            <div class="package" id="lap2">
+                <img src="assets/k4.png" alt="lap2">
+                <h3>Laptop Gaming</h3>
+                <p>Mahal</p>
+            </div>
+            <div class="package" id="hp1">
+                <img src="assets/k5.jpg" alt="hp1">
+                <h3>HP Gaming</h3>
+                <p>Mahal</p>
+            </div>
+            <div class="package" id="hp2">
+                <img src="assets/k6.jpg" alt="hp2">
+                <h3>HP Gaming</h3>
+                <p>Mahal</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="call-to-action">
+        <h2>BELI BANG</h2>
+        <p>APA YAAA</p>
+        <button id="cta-button">Call to Action</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 IX | Terms of Service | Privacy Policy</p>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
